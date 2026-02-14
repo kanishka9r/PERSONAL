@@ -85,19 +85,25 @@ export default function ValentinesProposal() {
         {step === 0 && (
           <motion.h2
             key="step-0"
-            className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
+            className={`text-4xl md:text-5xl font-bold text-white text-center
+drop-shadow-[0_8px_30px_rgba(0,0,0,0.9)]
+${playfairDisplay.className}`}
+
             transition={{ duration: 1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Congratulations! You have completed the game.
+            AWWWWW! You have completed the gameeee.
           </motion.h2>
         )}
         {step === 1 && (
           <motion.h2
             key="step-1"
-            className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
+            className={`text-4xl md:text-5xl font-bold text-white text-center
+drop-shadow-[0_8px_30px_rgba(0,0,0,0.9)]
+${playfairDisplay.className}`}
+
             transition={{ duration: 3 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -130,9 +136,12 @@ export default function ValentinesProposal() {
             </div>
 
             <h2
-              className={`text-5xl font-semibold mb-8 ${playfairDisplay.className}`}
+              className={`text-5xl md:text-6xl font-bold mb-8 text-white text-center
+  drop-shadow-[0_10px_40px_rgba(0,0,0,0.95)]
+  [ text-shadow:0_0_35px_rgba(255,182,193,0.7) ]
+  ${playfairDisplay.className}`}
             >
-              Will you be my Valentine?
+              uhmm...soo.. DO YOU LOVE?
             </h2>
             <Image
               src="/sad_hamster.png"
@@ -145,7 +154,7 @@ export default function ValentinesProposal() {
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 onClick={handleYesClick}
               >
-                Yes, I will! 🥰
+                Yes, I DO!! 🥰
               </button>
               <button
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl hover:from-gray-600 hover:to-gray-700 transform hover:scale-95 transition-all duration-300 shadow-lg"
@@ -161,7 +170,7 @@ export default function ValentinesProposal() {
                 onMouseEnter={() => setPosition(getRandomPosition())}
                 onClick={() => setPosition(getRandomPosition())}
               >
-                No, I won&apos;t 😢
+                No, I don&apos;t 😢
               </button>
             </div>
           </motion.div>
@@ -169,14 +178,20 @@ export default function ValentinesProposal() {
         {step === 3 && (
           <motion.div
             key="step-3"
-            className={`text-4xl font-semibold mb-4 flex flex-col justify-center items-center ${playfairDisplay.className}`}
+            className={`text-5xl md:text-6xl font-bold mb-6 text-white text-center
+drop-shadow-[0_8px_35px_rgba(0,0,0,0.9)]
+[ text-shadow:0_0_40px_rgba(255,255,255,0.5) ]
+flex flex-col justify-center items-center
+${playfairDisplay.className}`}
             transition={{ duration: 1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Thank you for accepting, I love you! 💕
-            <p className="text-sm mt-4">For more information, write me!!! 💌</p>
+          MY BUBU, I love you! 💕
+            <p className="text-lg text-rose-100 mt-4
+drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+For more love, write me!!! 💌</p>
             <Image
               src="/hamster_jumping.gif"
               alt="Hamster Feliz"
